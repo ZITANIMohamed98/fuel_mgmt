@@ -19,8 +19,8 @@ const chartOptions = {
         name: 'Online Customers',
         data: [40,70,20,90,36,80,30,91,60]
     }, {
-        name: 'Store Customers',
-        data: [40, 30, 70, 80, 40, 16, 40, 20, 51, 10]
+        name: 'Customers',
+        data: [40, 30, 70, 80, 40, 16, 40, 20, 51, 10, 32,56,42, 12,20,45,56]
     }],
     options: {
         color: ['#6ab04c', '#2980b9'],
