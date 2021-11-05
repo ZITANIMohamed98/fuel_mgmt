@@ -1,6 +1,6 @@
-# React Admin Dashboard with Multiple Themes
+# MegaFuel: Dashboard for gas station management
 
-    Build React Admin Dashboard with Multiple Themes | React Admin Panel CSS | ReactJS
+    Dynamic User Interface 
 
 # Video
 

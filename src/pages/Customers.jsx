@@ -2,16 +2,15 @@ import React from 'react'
 
 import Table from '../components/table/Table'
 
-import customerList from '../assets/JsonData/customers-list.json'
+import changesList from '../assets/JsonData/changes-list.json'
 
-const customerTableHead = [
+const changesTableHead = [
     '',
-    'name',
-    'email',
-    'phone',
-    'total orders',
-    'total spend',
-    'location'
+    'nTank',
+    'type',
+    'date',
+    'volume',
+    'totalPrice'
 ]
 
 const renderHead = (item, index) => <th key={index}>{item}</th>
@@ -19,20 +18,19 @@ const renderHead = (item, index) => <th key={index}>{item}</th>
 const renderBody = (item, index) => (
     <tr key={index}>
         <td>{item.id}</td>
-        <td>{item.name}</td>
-        <td>{item.email}</td>
-        <td>{item.phone}</td>
-        <td>{item.total_orders}</td>
-        <td>{item.total_spend}</td>
-        <td>{item.location}</td>
+        <td>{item.nTank}</td>
+        <td>{item.type}</td>
+        <td>{item.date}</td>
+        <td>{item.volume}</td>
+        <td>{item.totalPrice}</td>
     </tr>
 )
 
-const Customers = () => {
+const Changes = () => {
     return (
         <div>
             <h2 className="page-header">
-                customers
+                Transactions
             </h2>
             <div className="row">
                 <div className="col-12">
@@ -40,9 +38,9 @@ const Customers = () => {
                         <div className="card__body">
                             <Table
                                 limit='10'
-                                headData={customerTableHead}
+                                headData={changesTableHead}
                                 renderHead={(item, index) => renderHead(item, index)}
-                                bodyData={customerList}
+                                bodyData={changesList}
                                 renderBody={(item, index) => renderBody(item, index)}
                             />
                         </div>
@@ -53,4 +51,4 @@ const Customers = () => {
     )
 }
 
-export default Customers
+export default Changes
